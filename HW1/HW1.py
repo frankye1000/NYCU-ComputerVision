@@ -3,13 +3,9 @@ import numpy as np
 import open3d as o3d
 import matplotlib.pyplot as plt
 
-<<<<<<< HEAD
+
 image_row = 0 
 image_col = 0
-=======
-image_row = 240 
-image_col = 240
->>>>>>> 915fdebfd393b63bffa6ceb7f8b05e556010ff00
 
 # visualizing the mask (size : "image width" * "image height")
 def mask_visualization(M):
