@@ -3,8 +3,8 @@ import numpy as np
 import open3d as o3d
 import matplotlib.pyplot as plt
 
-image_row = 120 
-image_col = 120
+image_row = 0 
+image_col = 0
 
 # visualizing the mask (size : "image width" * "image height")
 def mask_visualization(M):
@@ -23,6 +23,7 @@ def normal_visualization(N):
     plt.figure()
     plt.imshow(N_map)
     plt.title('Normal map')
+    plt.show()
 
 # visualizing the depth on 2D image
 # D is the depth map which contains "only the z value" of all pixels (size : "image width" * "image height")
