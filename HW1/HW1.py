@@ -45,6 +45,7 @@ def save_ply(Z,filepath):
     data = np.zeros((image_row*image_col,3),dtype=np.float32)
     # let all point float on a base plane 
     baseline_val = np.min(Z_map)
+#     baseline_val = np.max(Z_map)
     Z_map[np.where(Z_map == 0)] = baseline_val
     for i in range(image_row):
         for j in range(image_col):
