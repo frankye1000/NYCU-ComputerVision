@@ -8,6 +8,7 @@ import sys
 def read_img(path):
     # opencv read image in BGR color space
     img = cv2.imread(path)
+    #img = cv2.resize(img,(1210,805))
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img_rgb  = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img, img_gray, img_rgb
